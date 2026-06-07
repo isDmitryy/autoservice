@@ -41,5 +41,5 @@ autoservice/
     ├── css/
     │   └── style.css
     ├── js/
-    │   └── main.js
+        └── main.js
 ```
