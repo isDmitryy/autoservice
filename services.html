@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>АвтоМастер — Услуги и цены</title>
+    <meta
+      name="description"
+      content="Цены на услуги автосервиса АвтоМастер: шиномонтаж от 30 минут, заправка автокондиционера, полировка кузова и фар, химчистка, сход-развал и ремонт тормозной системы."
+    />
+    <meta property="og:title" content="АвтоМастер — Услуги и цены" />
+    <meta
+      property="og:description"
+      content="Цены на услуги автосервиса АвтоМастер: шиномонтаж от 30 минут, заправка автокондиционера, полировка кузова и фар, химчистка, сход-развал и ремонт тормозной системы."
+    />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/js/main.js" defer></script>
+  </head>
+  <body class="font-sans">
+    <header class="header bg-gray-900 px-6 py-4">
+      <div
+        class="header__container max-w-6xl mx-auto flex justify-between items-center"
+      >
+        <a href="index.html" class="header__logo text-white text-2xl font-bold">
+          АвтоМастер
+        </a>
+        <button
+          class="burger md:hidden text-white text-2xl"
+          aria-label="Открыть меню навигации"
+        >
+          ☰
+        </button>
+        <nav
+          class="nav hidden md:flex md:flex-row flex-col gap-4 absolute md:static top-16 left-0 w-full md:w-auto bg-gray-900 md:bg-transparent px-6 md:px-0 py-4 md:py-0"
+          aria-label="Основная навигация"
+        >
+          <a href="index.html" class="nav__link text-white hover:text-red-400"
+            >Главная</a
+          >
+          <a
+            href="services.html"
+            class="nav__link nav__link--active text-red-400"
+            aria-current="page"
+            >Услуги</a
+          >
+          <a
+            href="contacts.html"
+            class="nav__link text-white hover:text-red-400"
+            >Контакты</a
+          >
+        </nav>
+        <a
+          href="contacts.html"
+          class="header__cta bg-red-600 text-white px-4 py-2 rounded-md hidden md:block"
+        >
+          Записаться
+        </a>
+      </div>
+    </header>
+
+    <main class="main bg-gray-100 py-8 md:py-16">
+      <section class="services-page">
+        <div class="services__container max-w-6xl mx-auto px-6">
+          <h1
+            class="services-page__title text-3xl font-bold text-gray-900 mb-10 text-center"
+          >
+            Наши услуги и цены
+          </h1>
+          <div
+            class="services-page__cards grid grid-cols-1 md:grid-cols-3 gap-6"
+          >
+            <article
+              class="service bg-white rounded-xl p-6 shadow-md overflow-hidden"
+            >
+              <img
+                src="https://images.pexels.com/photos/6872105/pexels-photo-6872105.jpeg"
+                alt="Химчистка салона"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-6">
+                <h2
+                  class="service__title text-xl font-semibold text-gray-900 mb-2"
+                >
+                  🧽 Детейлинг-химчистка салона
+                </h2>
+                <p class="service__text text-gray-600">
+                  Глубокая очистка всех поверхностей от въевшейся грязи, пятен и
+                  запахов. Используем безопасную гипоаллергенную химию и сушим
+                  салон до капли.
+                </p>
+                <p class="service__price text-red-600 font-bold">
+                  от 5 000 руб.
+                </p>
+              </div>
+            </article>
+            <article
+              class="service bg-white rounded-xl p-6 shadow-md overflow-hidden"
+            >
+              <img
+                src="https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg"
+                alt="Озонирование"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-6">
+                <h2
+                  class="service__title text-xl font-semibold text-gray-900 mb-2"
+                >
+                  🧫 Антибактериальная обработка (Озонирование)
+                </h2>
+                <p class="service__text text-gray-600">
+                  Полное уничтожение бактерий, вирусов, грибков и плесени в
+                  салоне и системе вентиляции. Устраняет даже самые стойкие
+                  запахи (табак, сырость).
+                </p>
+                <p class="service__price text-red-600 font-bold">
+                  от 1 500 руб.
+                </p>
+              </div>
+            </article>
+            <article
+              class="service bg-white rounded-xl p-6 shadow-md overflow-hidden"
+            >
+              <img
+                src="https://images.pexels.com/photos/3806288/pexels-photo-3806288.jpeg"
+                alt="Сход-развал"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-6">
+                <h2
+                  class="service__title text-xl font-semibold text-gray-900 mb-2"
+                >
+                  👁 Регулировка развал-схождения (3D-сход-развал)
+                </h2>
+                <p class="service__text text-gray-600">
+                  Настройка углов колес на высокоточном 3D-стенде. Устраняет
+                  увод машины в сторону, возвращает идеальную управляемость и
+                  бережет резину от износа.
+                </p>
+                <p class="service__price text-red-600 font-bold">
+                  от 2 000 руб.
+                </p>
+              </div>
+            </article>
+            <article
+              class="service bg-white rounded-xl p-6 shadow-md overflow-hidden"
+            >
+              <img
+                src="https://images.pexels.com/photos/6026083/pexels-photo-6026083.jpeg"
+                alt="Нанесение защитных покрытий"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-6">
+                <h2
+                  class="service__title text-xl font-semibold text-gray-900 mb-2"
+                >
+                  🧪 Нанесение защитных покрытий (Керамика / Жидкое стекло)
+                </h2>
+                <p class="service__text text-gray-600">
+                  Создание прочной невидимой брони на кузове. Защищает лак от
+                  выгорания, мелких царапин и химии, придавая автомобилю мощный
+                  гидрофобный эффект и зеркальный блеск.
+                </p>
+                <p class="service__price text-red-600 font-bold">
+                  от 12 000 руб.
+                </p>
+              </div>
+            </article>
+            <article
+              class="service bg-white rounded-xl p-6 shadow-md overflow-hidden"
+            >
+              <img
+                src="https://images.pexels.com/photos/4489732/pexels-photo-4489732.jpeg"
+                alt="Тормозная система"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-6">
+                <h2
+                  class="service__title text-xl font-semibold text-gray-900 mb-2"
+                >
+                  🛑 Обслуживание тормозной системы
+                </h2>
+                <p class="service__text text-gray-600">
+                  Замена колодок и дисков, обслуживание суппортов, проверка
+                  уровня и качества тормозной жидкости. Ваша уверенность в
+                  экстренном торможении.
+                </p>
+                <p class="service__price text-red-600 font-bold">
+                  от 1 200 руб.
+                </p>
+              </div>
+            </article>
+            <article
+              class="service bg-white rounded-xl p-6 shadow-md overflow-hidden"
+            >
+              <img
+                src="https://images.pexels.com/photos/3807133/pexels-photo-3807133.jpeg"
+                alt="Реставрация фар"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-6">
+                <h2
+                  class="service__title text-xl font-semibold text-gray-900 mb-2"
+                >
+                  💡 Реставрация и бронирование фар
+                </h2>
+                <p class="service__text text-gray-600">
+                  Глубокая полировка оптики для восстановления прозрачности +
+                  оклейка прочной полиуретановой пленкой. Защитит фары от
+                  сколов, пескоструя и помутнения.
+                </p>
+                <p class="service__price text-red-600 font-bold">
+                  от 3 500 руб.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer bg-gray-900 text-white text-center py-4">
+      <p class="footer__text">© 2026 АвтоМастер</p>
+    </footer>
+  </body>
+</html>

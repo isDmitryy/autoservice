@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>АвтоМастер — профессиональный ремонт автомобилей</title>
+    <meta
+      name="description"
+      content="Автосервис АвтоМастер в Москве: профессиональная заправка кондиционеров, качественный шиномонтаж и детейлинг-полировка кузова. Быстро, надежно и с гарантией на все работы."
+    />
+    <meta property="og:title" content="АвтоМастер" />
+    <meta
+      property="og:description"
+      content="Автосервис АвтоМастер в Москве: профессиональная заправка кондиционеров, качественный шиномонтаж и детейлинг-полировка кузова. Быстро, надежно и с гарантией на все работы."
+    />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/js/main.js" defer></script>
+  </head>
+  <body class="font-sans">
+    <header class="header bg-gray-900 px-6 py-4">
+      <div
+        class="header__container max-w-6xl mx-auto flex justify-between items-center"
+      >
+        <a href="index.html" class="header__logo text-white text-2xl font-bold">
+          АвтоМастер
+        </a>
+        <button
+          class="burger md:hidden text-white text-2xl"
+          aria-label="Открыть меню навигации"
+        >
+          ☰
+        </button>
+        <nav
+          class="nav hidden md:flex md:flex-row flex-col gap-4 absolute md:static top-16 left-0 w-full md:w-auto bg-gray-900 md:bg-transparent px-6 md:px-0 py-4 md:py-0"
+          aria-label="Основная навигация"
+        >
+          <a
+            href="index.html"
+            class="nav__link nav__link--active text-red-400"
+            aria-current="page"
+            >Главная</a
+          >
+          <a
+            href="services.html"
+            class="nav__link text-white hover:text-red-400"
+            >Услуги</a
+          >
+          <a
+            href="contacts.html"
+            class="nav__link text-white hover:text-red-400"
+            >Контакты</a
+          >
+        </nav>
+        <a
+          href="contacts.html"
+          class="header__cta bg-red-600 text-white px-4 py-2 rounded-md hidden md:block"
+        >
+          Записаться
+        </a>
+      </div>
+    </header>
+
+    <main class="main">
+      <section
+        class="hero py-12 md:py-24 bg-cover bg-center relative"
+        style="
+          background-image: url(&quot;https://images.pexels.com/photos/1149137/pexels-photo-1149137.jpeg&quot;);
+        "
+      >
+        <div class="absolute inset-0 bg-black opacity-60"></div>
+        <div class="hero__container max-w-6xl mx-auto px-6 relative z-10">
+          <h1
+            class="hero__title text-3xl md:text-5xl font-bold text-white mb-4"
+          >
+            АвтоМастер
+          </h1>
+          <p class="hero__text text-xl text-gray-300 mb-8">
+            Быстро, профессионально и с гарантией на все виды работ. Подготовим
+            вашу машину к любому сезону, вернем ей безупречный вид и комфорт в
+            поездках за 1 визит.
+          </p>
+          <button
+            class="hero__btn bg-red-600 text-white px-8 py-4 rounded-md text-lg font-semibold hover:bg-red-700"
+          >
+            Записаться на обслуживание
+          </button>
+        </div>
+      </section>
+      <section class="services bg-gray-100 py-8 md:py-16">
+        <div class="services__container max-w-6xl mx-auto px-6">
+          <h2
+            class="services__title text-3xl font-bold text-gray-900 mb-10 text-center"
+          >
+            Наши услуги
+          </h2>
+          <div class="services__items grid grid-cols-1 md:grid-cols-3 gap-6">
+            <article class="service bg-white rounded-xl shadow-md">
+              <img
+                src="https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg"
+                alt="Заправка кондиционера"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-6">
+                <h3
+                  class="service__title text-xl font-semibold text-gray-900 mb-2"
+                >
+                  Заправка и ремонт кондиционера
+                </h3>
+                <p class="service__text text-gray-600">
+                  Создадим идеальный микроклимат в салоне вашего автомобиля.
+                  Быстро найдем скрытые утечки, устраним неисправности и
+                  заправим систему качественным фреоном.
+                </p>
+              </div>
+            </article>
+            <article class="service bg-white rounded-xl shadow-md">
+              <img
+                src="https://images.pexels.com/photos/3806288/pexels-photo-3806288.jpeg"
+                alt="Шиномонтаж"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-6">
+                <h3
+                  class="service__title text-xl font-semibold text-gray-900 mb-2"
+                >
+                  Шиномонтаж
+                </h3>
+                <p class="service__text text-gray-600">
+                  Ваша безопасность и плавность хода автомобиля на любой дороге.
+                  Работаем быстро, аккуратно и без очередей благодаря
+                  предварительной записи.
+                </p>
+              </div>
+            </article>
+            <article class="service bg-white rounded-xl shadow-md">
+              <img
+                src="https://images.pexels.com/photos/6026083/pexels-photo-6026083.jpeg"
+                alt="Полировка автомобиля"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-6">
+                <h3
+                  class="service__title text-xl font-semibold text-gray-900 mb-2"
+                >
+                  Полировка автомобиля
+                </h3>
+                <p class="service__text text-gray-600">
+                  Вернем вашей машине глубокий цвет, зеркальный блеск и салонный
+                  лоск. Удалим мелкие царапины, потертости, следы реагентов и
+                  защитим лакокрасочное покрытие.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="about-us bg-white py-8 md:py-16">
+        <div class="about__container max-w-6xl mx-auto px-6">
+          <h2
+            class="about-us__title text-3xl font-bold text-gray-900 mb-10 text-center"
+          >
+            Почему выбирают нас?
+          </h2>
+          <div class="about__items grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="about__item text-center">
+              <div class="about__icon text-4xl mb-4">🔧</div>
+              <h3 class="about__title text-xl font-semibold text-gray-900 mb-2">
+                Опытные мастера
+              </h3>
+              <p class="about__text text-gray-600">
+                Каждый специалист имеет опыт работы от 5 лет. Регулярно проходим
+                обучение и сертификацию.
+              </p>
+            </div>
+            <div class="about__item text-center">
+              <div class="about__icon text-4xl mb-4">⏱</div>
+              <h3 class="about__title text-xl font-semibold text-gray-900 mb-2">
+                Быстрые сроки
+              </h3>
+              <p class="about__text text-gray-600">
+                Шиномонтаж и балансировка — всего за 30 минут. Заправка
+                кондиционера занимает не более получаса.
+              </p>
+            </div>
+            <div class="about__item text-center">
+              <div class="about__icon text-4xl mb-4">✅</div>
+              <h3 class="about__title text-xl font-semibold text-gray-900 mb-2">
+                Гарантия на работы
+              </h3>
+              <p class="about__text text-gray-600">
+                Контролируем каждый этап по внутреннему регламенту. Бесплатно
+                устраним проблему, если что-то пойдет не так. Выдаем чек и
+                заказ-наряд после окончания ремонта.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer bg-gray-900 text-white text-center py-4">
+      <p class="footer__text">© 2026 АвтоМастер</p>
+    </footer>
+  </body>
+</html>
